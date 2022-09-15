@@ -70,7 +70,7 @@ class Comment(db.Model):
     blogpost = relationship("BlogPost", back_populates="comments")
 
 
-# db.create_all()
+db.create_all()
 
 login_manager = LoginManager()
 login_manager.init_app(app)
